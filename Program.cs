@@ -7,8 +7,8 @@ namespace Sorting
     {
         static void Main(string[] args)
         {
-            CountTime(BubbleSort.BubbleSorting);
-            CountTime(InsertionSort.InsertionSorting);
+            //CountTime(BubbleSort.BubbleSorting);
+            //CountTime(InsertionSort.InsertionSorting);
             CountTime(ShellSort.ShellSorting);
         }
         static int[] CreateTestData(int amount)
@@ -24,7 +24,7 @@ namespace Sorting
         static void CountTime(Action<int[]> sortMethod)
         {
             Stopwatch clock = new Stopwatch();
-            for (int N = 100; N <= 10_000; N *= 10)
+            for (int N = 10; N <= 10_000; N *= 10)
             {
                 var testArray = CreateTestData(N);
                 clock.Start();
