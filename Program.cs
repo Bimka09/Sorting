@@ -7,8 +7,8 @@ namespace Sorting
     {
         static void Main(string[] args)
         {
-            //CountTime(BubbleSort.BubbleSorting);
-            //CountTime(InsertionSort.InsertionSorting);
+            CountTime(BubbleSort.BubbleSorting);
+            CountTime(InsertionSort.InsertionSorting);
             CountTime(ShellSort.ShellSorting);
         }
         static int[] CreateTestData(int amount)
